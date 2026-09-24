@@ -1,0 +1,1488 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHUYÊN ĐỀ CÂU BỊ ĐỘNG (PASSIVE VOICE) - 50 CÂU TỔNG HỢP - Ms Lê Hằng English</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&family=Quicksand:wght@600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        @keyframes floatPattern {
+            from { background-position: 0 0; }
+            to { background-position: 120px 240px; }
+        }
+
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            20%, 60% { transform: translateX(-8px); }
+            40%, 80% { transform: translateX(8px); }
+        }
+
+        body {
+            font-family: 'Quicksand', 'Nunito', sans-serif;
+            min-height: 100vh;
+            background: linear-gradient(-45deg, #0284C7, #2563EB, #7C3AED, #059669);
+            background-size: 400% 400%;
+            animation: gradientBG 12s ease infinite;
+            padding: 24px 12px;
+            position: relative;
+            color: #2D3748;
+            overflow-x: hidden;
+        }
+
+        .bg-pattern {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 100 100'%3E%3Cg fill='%23ffffff' fill-opacity='0.22'%3E%3Cpath d='M11 18l3 6 6 3-6 3-3 6-3-6-6-3 6-3z'/%3E%3Cpath d='M70 60l2 4 4 2-4 2-2 4-2-4-4-2 4-2z'/%3E%3Ccircle cx='40' cy='70' r='5'/%3E%3Ccircle cx='80' cy='20' r='6'/%3E%3Cpath d='M45 20c-3 0-5 2-5 5s2 5 5 5 5-2 5-5-2-5-5-5z'/%3E%3C/g%3E%3C/svg%3E");
+            animation: floatPattern 20s linear infinite;
+        }
+
+        .container {
+            max-width: 880px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 22px;
+        }
+
+        .teacher-badge {
+            display: inline-block;
+            background: #ffffff;
+            color: #2563EB;
+            font-size: 0.95rem;
+            font-weight: 800;
+            padding: 8px 24px;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .main-title {
+            font-size: 1.8rem;
+            font-weight: 900;
+            color: #ffffff;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+            margin-bottom: 6px;
+        }
+
+        .warning-box {
+            background: #FFF3BF;
+            border: 3px dashed #FAB005;
+            border-radius: 20px;
+            padding: 18px 22px;
+            text-align: center;
+            margin-bottom: 28px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        .warning-title {
+            color: #D9480F;
+            font-weight: 900;
+            font-size: 1.15rem;
+            margin-bottom: 8px;
+        }
+
+        .warning-text {
+            color: #495057;
+            font-size: 0.98rem;
+            font-weight: 700;
+            line-height: 1.6;
+        }
+
+        .warning-highlight {
+            color: #E67E22;
+            font-weight: 900;
+            margin-top: 6px;
+            display: block;
+            font-size: 1.05rem;
+        }
+
+        .question-card {
+            background: #ffffff;
+            border-radius: 24px;
+            padding: 26px 30px;
+            margin-bottom: 26px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+            transition: transform 0.2s ease;
+        }
+
+        .question-card.shake {
+            animation: shake 0.4s ease-in-out;
+        }
+
+        .question-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 14px;
+        }
+
+        .question-number {
+            background: #2563EB;
+            color: white;
+            font-weight: 900;
+            font-size: 1rem;
+            padding: 6px 16px;
+            border-radius: 14px;
+            margin-right: 12px;
+            box-shadow: 0 3px 0 #1D4ED8;
+            flex-shrink: 0;
+        }
+
+        .question-instruction {
+            font-weight: 800;
+            color: #4A5568;
+            font-size: 0.95rem;
+        }
+
+        .question-text {
+            font-size: 1.18rem;
+            font-weight: 800;
+            color: #2D3748;
+            line-height: 1.6;
+            margin-bottom: 18px;
+            white-space: pre-line;
+        }
+
+        .options-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 12px;
+        }
+
+        .option-btn {
+            background-color: #F7FAFC;
+            border: 2px solid #E2E8F0;
+            border-radius: 18px;
+            padding: 14px 20px;
+            font-size: 1.05rem;
+            font-weight: 800;
+            color: #2D3748;
+            cursor: pointer;
+            box-shadow: 0 5px 0 #CBD5E0;
+            transition: all 0.15s ease;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            line-height: 1.4;
+        }
+
+        .option-btn:hover:not(:disabled) {
+            transform: translateY(-3px) scale(1.01);
+            box-shadow: 0 8px 0 #CBD5E0;
+            background-color: #EDF2F7;
+        }
+
+        .option-btn:active:not(:disabled) {
+            transform: translateY(2px);
+            box-shadow: 0 2px 0 #CBD5E0;
+        }
+
+        .option-btn.correct {
+            background-color: #00D26A !important;
+            color: white !important;
+            border-color: #00B85C !important;
+            box-shadow: 0 5px 0 #00994D !important;
+        }
+
+        .option-btn.wrong {
+            background-color: #FF4757 !important;
+            color: white !important;
+            border-color: #E03947 !important;
+            box-shadow: 0 5px 0 #C0392B !important;
+        }
+
+        .option-btn:disabled {
+            cursor: default;
+            opacity: 0.95;
+        }
+
+        .explanation-box {
+            display: none;
+            margin-top: 22px;
+            background: #EBF8FF;
+            border: 2px solid #63B3ED;
+            border-radius: 18px;
+            padding: 22px;
+            font-size: 0.98rem;
+            line-height: 1.65;
+        }
+
+        .explanation-title {
+            font-weight: 900;
+            color: #2B6CB0;
+            font-size: 1.1rem;
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            border-bottom: 2px dashed #90CDF4;
+            padding-bottom: 8px;
+        }
+
+        .exp-section {
+            margin-bottom: 14px;
+        }
+
+        .exp-section:last-child {
+            margin-bottom: 0;
+        }
+
+        .exp-section-title {
+            font-weight: 800;
+            color: #2D3748;
+            margin-bottom: 6px;
+            font-size: 1.02rem;
+        }
+
+        .options-breakdown-list {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 12px 16px;
+            margin: 6px 0;
+            border: 1px solid #CBD5E0;
+        }
+
+        .option-breakdown-item {
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #4A5568;
+            line-height: 1.5;
+        }
+
+        .option-breakdown-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .submit-section {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .submit-btn {
+            background: #2563EB;
+            color: white;
+            font-size: 1.45rem;
+            font-weight: 900;
+            padding: 18px 54px;
+            border: none;
+            border-radius: 28px;
+            box-shadow: 0 8px 0 #1D4ED8;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            letter-spacing: 0.5px;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 0 #1D4ED8;
+            background: #3B82F6;
+        }
+
+        .submit-btn:active {
+            transform: translateY(2px);
+            box-shadow: 0 4px 0 #1D4ED8;
+        }
+
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.65);
+            z-index: 100;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .modal-content {
+            background: white;
+            border-radius: 28px;
+            padding: 35px 28px;
+            max-width: 520px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+            position: relative;
+            animation: popIn 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        @keyframes popIn {
+            from { transform: scale(0.7); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+
+        .modal-score {
+            font-size: 3.2rem;
+            font-weight: 900;
+            color: #2563EB;
+            margin: 15px 0;
+        }
+
+        .modal-feedback {
+            font-size: 1.1rem;
+            font-weight: 800;
+            color: #2D3748;
+            line-height: 1.6;
+            margin-bottom: 25px;
+            background: #F7FAFC;
+            padding: 18px;
+            border-radius: 18px;
+            border: 2px solid #E2E8F0;
+        }
+
+        .modal-close-btn {
+            background: #2563EB;
+            color: white;
+            font-weight: 900;
+            font-size: 1.15rem;
+            padding: 14px 36px;
+            border: none;
+            border-radius: 20px;
+            box-shadow: 0 5px 0 #1D4ED8;
+            cursor: pointer;
+        }
+
+        #confetti-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 99;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bg-pattern"></div>
+    <canvas id="confetti-canvas"></canvas>
+
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="teacher-badge">Giáo viên tạo: Ms Lê Hằng English</div>
+            <h1 class="main-title">BÀI LUYỆN TẬP SỐ 2 - CÂU BỊ ĐỘNG (PASSIVE VOICE)</h1>
+        </header>
+
+        <!-- Warning Box -->
+        <div class="warning-box">
+            <div class="warning-title">⚠️ LỜI NHẮC CỰC KỲ QUAN TRỌNG ⚠️</div>
+            <div class="warning-text">
+                Chỉ có đọc kỹ giải thích ngay sau mỗi câu, sau đó ghi lại công thức và từ vựng mới vào vở để học thì mới thực sự giỏi lên.<br>
+                Làm cho xong mà không đọc giải thích hay đọc qua loa không ghi chép thì chỉ tốn thời gian vô ích!
+                <span class="warning-highlight">* Kéo tới đâu, làm tới đó! *</span>
+            </div>
+        </div>
+
+        <!-- Quiz Container -->
+        <div id="quiz-container"></div>
+
+        <!-- Submit Button -->
+        <div class="submit-section">
+            <button class="submit-btn" onclick="submitQuiz()">🎉 NỘP BÀI THI 🎉</button>
+        </div>
+    </div>
+
+    <!-- Modal Score Popup -->
+    <div class="modal-overlay" id="scoreModal">
+        <div class="modal-content">
+            <h2 style="font-size:1.8rem; font-weight:900; color:#2D3748;">KẾT QUẢ BÀI THI</h2>
+            <div class="modal-score" id="scoreDisplay">0 / 50</div>
+            <div class="modal-feedback" id="feedbackDisplay"></div>
+            <button class="modal-close-btn" onclick="closeModal()">Xem lại bài làm</button>
+        </div>
+    </div>
+
+    <script>
+        const rawQuizData = [
+            {
+                id: 1,
+                instruction: "PASSIVE VOICE (Thì bị động)",
+                text: "Question 1: The annual report _______ to all employees before the meeting started yesterday.",
+                options: ["had been distributed", "distributed", "has been distributed", "will distribute"],
+                correctIndex: 0,
+                translation: "Dịch nghĩa toàn câu: Báo cáo thường niên đã được phân phát tới tất cả nhân viên trước khi cuộc họp bắt đầu ngày hôm qua.",
+                optionsBreakdown: [
+                    "A. had been distributed: Bị động quá khứ hoàn thành (had + been + Vp2).",
+                    "B. distributed: Động từ chủ động thì quá khứ đơn.",
+                    "C. has been distributed: Bị động hiện tại hoàn thành.",
+                    "D. will distribute: Động từ chủ động thì tương lai đơn."
+                ],
+                whyCorrect: "Hành động phân phát báo cáo xảy ra và hoàn thành TRƯỚC một mốc thời gian trong quá khứ ('before the meeting started yesterday') nên phải dùng quá khứ hoàn thành. Chủ ngữ 'annual report' là vật nên dùng dạng bị động 'had been distributed'.",
+                whyOthersWrong: "B và D là thể chủ động; C sai thì vì câu xảy ra trong quá khứ."
+            },
+            {
+                id: 2,
+                instruction: "PASSIVE VOICE (Cấu trúc truyền khiến)",
+                text: "Question 2: She had her house _______ completely renovated before moving in last winter.",
+                options: ["renovating", "renovated", "renovates", "renovate"],
+                correctIndex: 1,
+                translation: "Dịch nghĩa toàn câu: Cô ấy đã thuê người cải tạo lại toàn bộ ngôi nhà của mình trước khi chuyển vào ở mùa đông năm ngoái.",
+                optionsBreakdown: [
+                    "A. renovating: Dạng V-ing.",
+                    "B. renovated: Quá khứ phân từ (Vp2).",
+                    "C. renovates: Động từ chia hiện tại đơn số ít.",
+                    "D. renovate: Động từ nguyên mẫu."
+                ],
+                whyCorrect: "Áp dụng cấu trúc truyền khiến bị động (Causative form): 'have + sth + Vp2' (nhờ/thuê ai đó làm cái gì cho mình). Do đó chọn 'renovated'.",
+                whyOthersWrong: "A, C, D vi phạm cấu trúc truyền khiến bị động 'have + sth + Vp2'."
+            },
+            {
+                id: 3,
+                instruction: "PASSIVE VOICE (Thì bị động)",
+                text: "Question 3: The new museum _______ by the city council and will open to the public next month.",
+                options: ["has built", "built", "is being built", "was building"],
+                correctIndex: 2,
+                translation: "Dịch nghĩa toàn câu: Bảo tàng mới đang được xây dựng bởi hội đồng thành phố và sẽ mở cửa cho công chúng vào tháng tới.",
+                optionsBreakdown: [
+                    "A. has built: Chủ động hiện tại hoàn thành.",
+                    "B. built: Chủ động quá khứ đơn.",
+                    "C. is being built: Bị động hiện tại tiếp diễn (am/is/are + being + Vp2).",
+                    "D. was building: Chủ động quá khứ tiếp diễn."
+                ],
+                whyCorrect: "Chủ ngữ 'The new museum' (bảo tàng mới) bị tác động bởi hành động xây dựng ('by the city council') và đang diễn ra để chuẩn bị mở cửa vào tháng sau nên dùng bị động hiện tại tiếp diễn 'is being built'.",
+                whyOthersWrong: "A, B, D đều ở thể chủ động, không phù hợp với chủ ngữ bảo tàng."
+            },
+            {
+                id: 4,
+                instruction: "PASSIVE VOICE (Bị động của động từ/tính từ đi kèm to-V)",
+                text: "Question 4: I was surprised _______ to the prestigious international gala dinner held at the city hall last night.",
+                options: ["to invite", "to be invited", "inviting", "being invited"],
+                correctIndex: 1,
+                translation: "Dịch nghĩa toàn câu: Tôi rất ngạc nhiên khi được mời đến bữa tiệc tối gala quốc tế sang trọng tổ chức tại tòa thị chính tối qua.",
+                optionsBreakdown: [
+                    "A. to invite: Dạng chủ động to-V.",
+                    "B. to be invited: Dạng bị động to be + Vp2.",
+                    "C. inviting: Dạng V-ing chủ động.",
+                    "D. being invited: Dạng V-ing bị động."
+                ],
+                whyCorrect: "Sau tính từ 'surprised' ta dùng 'to-V'. Vì chủ ngữ 'I' được người khác mời đi dự tiệc nên phải dùng bị động 'to be invited'.",
+                whyOthersWrong: "A là chủ động; C và D sai vì sau tính từ cảm xúc 'surprised' bắt buộc dùng to-V chứ không dùng V-ing."
+            },
+            {
+                id: 5,
+                instruction: "PASSIVE VOICE (Đảo ngữ bị động)",
+                text: "Question 5: Never before _______ such advanced technology applied to medical research in this country.",
+                options: ["has been", "was", "is", "will be"],
+                correctIndex: 0,
+                translation: "Dịch nghĩa toàn câu: Chưa bao giờ công nghệ tiên tiến như vậy được áp dụng vào nghiên cứu y học ở quốc gia này.",
+                optionsBreakdown: [
+                    "A. has been: Trợ động từ HTHT dùng trong đảo ngữ.",
+                    "B. was: Động từ tobe quá khứ đơn.",
+                    "C. is: Động từ tobe hiện tại đơn.",
+                    "D. will be: Động từ trợ tương lai đơn."
+                ],
+                whyCorrect: "Cấu trúc đảo ngữ với 'Never before': 'Never before + have/has + S + been + Vp2'. Do đó dùng 'has been'.",
+                whyOthersWrong: "B, C, D không đúng cấu trúc thì hiện tại hoàn thành đi với cụm đảo ngữ 'Never before'."
+            },
+            {
+                id: 6,
+                instruction: "PASSIVE VOICE (Sự phối thì bị động)",
+                text: "Question 6: The documents _______ carefully checked before they were sent to the international partners.",
+                options: ["have been", "are", "will be", "had been"],
+                correctIndex: 3,
+                translation: "Dịch nghĩa toàn câu: Các tài liệu đã được kiểm tra cẩn thận trước khi chúng được gửi tới các đối tác quốc tế.",
+                optionsBreakdown: [
+                    "A. have been: Bị động hiện tại hoàn thành.",
+                    "B. are: Bị động hiện tại đơn.",
+                    "C. will be: Bị động tương lai đơn.",
+                    "D. had been: Bị động quá khứ hoàn thành."
+                ],
+                whyCorrect: "Hành động kiểm tra tài liệu diễn ra trước hành động 'were sent' (quá khứ đơn) nên hành động xảy ra trước phải chia ở thì quá khứ hoàn thành bị động 'had been (checked)'.",
+                whyOthersWrong: "A, B, C sai sự phối thì trong quá khứ."
+            },
+            {
+                id: 7,
+                instruction: "PASSIVE VOICE (Thì tương lai đơn bị động)",
+                text: "Question 7: The invitations _______ to all participants by email tomorrow morning.",
+                options: ["will be sent", "are sending", "sent", "have sent"],
+                correctIndex: 0,
+                translation: "Dịch nghĩa toàn câu: Giấy mời sẽ được gửi đến tất cả những người tham gia qua email vào sáng mai.",
+                optionsBreakdown: [
+                    "A. will be sent: Bị động tương lai đơn (will be + Vp2).",
+                    "B. are sending: Chủ động hiện tại tiếp diễn.",
+                    "C. sent: Động từ quá khứ đơn.",
+                    "D. have sent: Chủ động hiện tại hoàn thành."
+                ],
+                whyCorrect: "Trạng ngữ chỉ thời gian 'tomorrow morning' chỉ tương lai và chủ ngữ 'The invitations' (thư mời) cần dạng bị động nên dùng 'will be sent'.",
+                whyOthersWrong: "B, C, D đều ở dạng chủ động hoặc sai thì."
+            },
+            {
+                id: 8,
+                instruction: "PASSIVE VOICE (Bị động với mốc 'by the end of last year')",
+                text: "Question 8: The project _______ successfully completed by the research team by the end of last year.",
+                options: ["will be", "has been", "had been", "is being"],
+                correctIndex: 2,
+                translation: "Dịch nghĩa toàn câu: Dự án đã được hoàn thành thành công bởi nhóm nghiên cứu vào cuối năm ngoái.",
+                optionsBreakdown: [
+                    "A. will be: Tương lai đơn bị động.",
+                    "B. has been: Hiện tại hoàn thành bị động.",
+                    "C. had been: Quá khứ hoàn thành bị động.",
+                    "D. is being: Hiện tại tiếp diễn bị động."
+                ],
+                whyCorrect: "Cụm 'by the end of + mốc thời gian quá khứ' (by the end of last year) là dấu hiệu nhận biết thì quá khứ hoàn thành bị động 'had been (completed)'.",
+                whyOthersWrong: "A, B, D dùng sai thì theo dấu hiệu nhận biết thời gian."
+            },
+            {
+                id: 9,
+                instruction: "PASSIVE VOICE (Bị động tương lai hoàn thành)",
+                text: "Question 9: By next June, the research project _______ for over three years.",
+                options: ["will complete", "will have completed", "will have been completed", "completes"],
+                correctIndex: 2,
+                translation: "Dịch nghĩa toàn câu: Tính đến tháng 6 tới, dự án nghiên cứu sẽ được thực hiện hoàn thành trong hơn ba năm.",
+                optionsBreakdown: [
+                    "A. will complete: Chủ động tương lai đơn.",
+                    "B. will have completed: Chủ động tương lai hoàn thành.",
+                    "C. will have been completed: Bị động tương lai hoàn thành (will have been + Vp2).",
+                    "D. completes: Chủ động hiện tại đơn."
+                ],
+                whyCorrect: "Dấu hiệu 'By next June' đi với khoảng thời gian 'for over three years' đòi hỏi thì Tương lai hoàn thành. Do 'research project' là vật bị tác động nên chọn bị động 'will have been completed'.",
+                whyOthersWrong: "A, B, D là thể chủ động và không đúng thì."
+            },
+            {
+                id: 10,
+                instruction: "PASSIVE VOICE (Thì hiện tại đơn bị động)",
+                text: "Question 10: This policy _______ annually to ensure transparency and fairness.",
+                options: ["reviews", "is reviewed", "was reviewing", "has reviewed"],
+                correctIndex: 1,
+                translation: "Dịch nghĩa toàn câu: Chính sách này được xem xét hàng năm để đảm bảo tính minh bạch và công bằng.",
+                optionsBreakdown: [
+                    "A. reviews: Động từ chủ động chia hiện tại đơn.",
+                    "B. is reviewed: Bị động hiện tại đơn (is + Vp2).",
+                    "C. was reviewing: Chủ động quá khứ tiếp diễn.",
+                    "D. has reviewed: Chủ động hiện tại hoàn thành."
+                ],
+                whyCorrect: "Trạng từ 'annually' (hàng năm) chỉ thói quen/quy định lặp đi lặp lại ở hiện tại đơn. 'This policy' là vật nên dùng bị động 'is reviewed'.",
+                whyOthersWrong: "A, C, D đều ở thể chủ động."
+            },
+            {
+                id: 11,
+                instruction: "PASSIVE VOICE (Cấu trúc truyền khiến)",
+                text: "Question 11: My parents decided to _______ by a professional interior designer to make the living room look more modern.",
+                options: ["make their house decorated", "have decorated their house", "get their house decorate", "have their house decorated"],
+                correctIndex: 3,
+                translation: "Dịch nghĩa toàn câu: Bố mẹ tôi đã quyết định thuê thiết kế lại phòng khách bởi một nhà thiết kế nội thất chuyên nghiệp để giúp phòng trông hiện đại hơn.",
+                optionsBreakdown: [
+                    "A. make their house decorated: Cấu trúc sai.",
+                    "B. have decorated their house: Chủ động hiện tại hoàn thành sai nghĩa.",
+                    "C. get their house decorate: Dùng sai dạng V-bare thay vì Vp2.",
+                    "D. have their house decorated: Cấu trúc bị động 'have + sth + Vp2'."
+                ],
+                whyCorrect: "Cấu trúc 'have + sth + Vp2 + (by sb)': thuê/nhờ ai làm việc gì cho mình. Đáp án D hoàn toàn chính xác.",
+                whyOthersWrong: "A, B, C dùng sai công thức truyền khiến bị động."
+            },
+            {
+                id: 12,
+                instruction: "PASSIVE VOICE (Động từ khuyết thiếu bị động)",
+                text: "Question 12: The new regulations _______ strictly followed by all departments to avoid penalties.",
+                options: ["will", "are", "were", "must be"],
+                correctIndex: 3,
+                translation: "Dịch nghĩa toàn câu: Các quy định mới phải được tuân thủ nghiêm ngặt bởi tất cả các bộ phận để tránh bị phạt.",
+                optionsBreakdown: [
+                    "A. will: Thiếu 'be' để tạo bị động.",
+                    "B. are: Hiện tại đơn bị động (chưa diễn tả tính bắt buộc).",
+                    "C. were: Quá khứ đơn bị động.",
+                    "D. must be: Động từ khuyết thiếu bị động (must + be + Vp2)."
+                ],
+                whyCorrect: "Ngữ cảnh yêu cầu tính bắt buộc ('to avoid penalties') đi với dạng bị động của động từ khuyết thiếu 'must be + Vp2 (followed)'.",
+                whyOthersWrong: "A thiếu 'be'; B và C không biểu đạt được mức độ bắt buộc cần thiết."
+            },
+            {
+                id: 13,
+                instruction: "PASSIVE VOICE (Câu gián tiếp bị động)",
+                text: "Question 13: The manager said that the report _______ to the director by the following morning.",
+                options: ["would be delivered", "delivered", "has delivered", "will deliver"],
+                correctIndex: 0,
+                translation: "Dịch nghĩa toàn câu: Quản lý nói rằng báo cáo sẽ được chuyển tới giám đốc vào sáng hôm sau.",
+                optionsBreakdown: [
+                    "A. would be delivered: Bị động lùi thì tương lai (would be + Vp2).",
+                    "B. delivered: Động từ chủ động quá khứ.",
+                    "C. has delivered: Chủ động hiện tại hoàn thành.",
+                    "D. will deliver: Chủ động tương lai đơn chưa lùi thì."
+                ],
+                whyCorrect: "Trong câu gián tiếp 'said that...', trạng ngữ 'the following morning' được chuyển từ 'tomorrow morning'. Do đó 'will be delivered' phải lùi thì thành 'would be delivered'.",
+                whyOthersWrong: "B, C, D đều chủ động hoặc không lùi thì trong câu gián tiếp."
+            },
+            {
+                id: 14,
+                instruction: "PASSIVE VOICE (Đảo ngữ phủ định bị động)",
+                text: "Question 14: Under no circumstances _______ to enter the laboratory without wearing proper protective gear and identification.",
+                options: ["students are allowed", "are students allowed", "will students allow", "are students allowing"],
+                correctIndex: 1,
+                translation: "Dịch nghĩa toàn câu: Trong bất kỳ trường hợp nào, sinh viên cũng không được phép vào phòng thí nghiệm mà không đeo đồ bảo hộ và thẻ tên.",
+                optionsBreakdown: [
+                    "A. students are allowed: Chưa đảo ngữ.",
+                    "B. are students allowed: Đảo ngữ bị động (To be + S + Vp2).",
+                    "C. will students allow: Chủ động sai nghĩa.",
+                    "D. are students allowing: Cấu trúc chủ động tiếp diễn sai nghĩa."
+                ],
+                whyCorrect: "Cụm từ phủ định đứng đầu câu 'Under no circumstances' bắt buộc đảo trợ động từ lên trước chủ ngữ: 'are students allowed'.",
+                whyOthersWrong: "A chưa đảo ngữ; C và D ở dạng chủ động."
+            },
+            {
+                id: 15,
+                instruction: "PASSIVE VOICE (Bị động với động từ tri giác)",
+                text: "Question 15: The suspect was seen _______ the building through the back door just minutes before the alarm went off.",
+                options: ["entering", "entered", "to be entered", "to enter"],
+                correctIndex: 0,
+                translation: "Dịch nghĩa toàn câu: Nghi phạm được nhìn thấy đang đi vào tòa nhà qua cửa sau chỉ vài phút trước khi chuông báo động vang lên.",
+                optionsBreakdown: [
+                    "A. entering: Dạng V-ing chỉ hành động đang diễn ra được chứng kiến.",
+                    "B. entered: Quá khứ đơn.",
+                    "C. to be entered: Bị động to-V.",
+                    "D. to enter: Dạng to-V chỉ toàn bộ hành động."
+                ],
+                whyCorrect: "Bị động của động từ giác quan (see sb V-ing): 'S + be seen + V-ing' khi chứng kiến một phần hành động đang diễn ra tại thời điểm đó.",
+                whyOthersWrong: "B, C sai ngữ pháp; D 'to enter' thường dùng khi chứng kiến toàn bộ quá trình từ đầu đến cuối, ngữ cảnh 'vừa ngay trước khi báo động kêu' nhấn mạnh hành động đang xảy ra tại khoảnh khắc đó."
+            },
+            {
+                id: 16,
+                instruction: "PASSIVE VOICE (Rút gọn mệnh đề bị động hoàn thành)",
+                text: "Question 16: Having _______ by the sudden loud noise, the little child started crying and ran to her mother.",
+                options: ["frightened", "being frightened", "been frightened", "to be frightened"],
+                correctIndex: 2,
+                translation: "Dịch nghĩa toàn câu: Sau khi bị làm cho hoảng sợ bởi tiếng động lớn đột ngột, đứa trẻ bắt đầu khóc và chạy về phía mẹ.",
+                optionsBreakdown: [
+                    "A. frightened: Thiếu 'been'.",
+                    "B. being frightened: Rút gọn hiện tại không phù hợp hoàn thành.",
+                    "C. been frightened: Cấu trúc bị động hoàn thành 'Having been + Vp2'.",
+                    "D. to be frightened: Dạng to-V không đứng sau Having."
+                ],
+                whyCorrect: "Rút gọn hai mệnh đề đồng chủ ngữ ở thể bị động xảy ra trước: 'Having been + Vp2' (Having been frightened).",
+                whyOthersWrong: "A, B, D không tuân thủ công thức rút gọn mệnh đề bị động hoàn thành."
+            },
+            {
+                id: 17,
+                instruction: "PASSIVE VOICE (Thì hiện tại hoàn thành bị động)",
+                text: "Question 17: The old factory, which _______ for decades, is finally being demolished to make way for a new shopping complex.",
+                options: ["was abandoned", "was abandoned", "has been abandoned", "is abandoned"],
+                correctIndex: 2,
+                translation: "Dịch nghĩa toàn câu: Nhà máy cũ, nơi đã bị bỏ hoang trong nhiều thập kỷ, cuối cùng cũng đang bị phá dỡ để nhường chỗ cho một khu phức hợp thương mại mới.",
+                optionsBreakdown: [
+                    "A. was abandoned: Quá khứ đơn bị động.",
+                    "B. was abandoned: Quá khứ đơn bị động.",
+                    "C. has been abandoned: Hiện tại hoàn thành bị động (has been + Vp2).",
+                    "D. is abandoned: Hiện tại đơn bị động."
+                ],
+                whyCorrect: "Cụm 'for decades' (trong nhiều thập kỷ) chỉ hành động kéo dài từ quá khứ đến hiện tại -> dùng hiện tại hoàn thành bị động 'has been abandoned'.",
+                whyOthersWrong: "A, B, D không dùng thì hiện tại hoàn thành khi có trạng ngữ 'for decades'."
+            },
+            {
+                id: 18,
+                instruction: "PASSIVE VOICE (Cấu trúc 'Only after')",
+                text: "Question 18: Only after the documents _______ thoroughly checked were they allowed to be published online.",
+                options: ["will be", "are", "were", "had been"],
+                correctIndex: 3,
+                translation: "Dịch nghĩa toàn câu: Chỉ sau khi các tài liệu được kiểm tra kỹ lưỡng thì chúng mới được phép xuất bản trực tuyến.",
+                optionsBreakdown: [
+                    "A. will be: Tương lai đơn.",
+                    "B. are: Hiện tại đơn.",
+                    "C. were: Quá khứ đơn.",
+                    "D. had been: Quá khứ hoàn thành bị động."
+                ],
+                whyCorrect: "Công thức: 'Only after + S + had + been + Vp2, WAS/WERE + S + Vp2'. Hành động kiểm tra xong trước rồi mới được đăng lên.",
+                whyOthersWrong: "A, B, C sai sự phối thì quá khứ hoàn thành - quá khứ đơn."
+            },
+            {
+                id: 19,
+                instruction: "PASSIVE VOICE (Cấu trúc truyền khiến với Get)",
+                text: "Question 19: You should get your eyes _______ by an ophthalmologist if you continue to have difficulty reading small print.",
+                options: ["examine", "to examine", "examined", "examining"],
+                correctIndex: 2,
+                translation: "Dịch nghĩa toàn câu: Bạn nên đi khám mắt bởi một bác sĩ nhãn khoa nếu bạn tiếp tục gặp khó khăn khi đọc chữ nhỏ.",
+                optionsBreakdown: [
+                    "A. examine: Động từ nguyên mẫu.",
+                    "B. to examine: Dạng to-V.",
+                    "C. examined: Dạng Quá khứ phân từ Vp2.",
+                    "D. examining: Dạng V-ing."
+                ],
+                whyCorrect: "Cấu trúc truyền khiến bị động: 'get + sth + Vp2 + (by sb)' (khám mắt/làm cái gì bởi ai). Do đó chọn 'examined'.",
+                whyOthersWrong: "A, B, D không phù hợp công thức 'get + sth + Vp2'."
+            },
+            {
+                id: 20,
+                instruction: "PASSIVE VOICE (Đảo ngữ bị động)",
+                text: "Question 20: Rarely _______ such valuable manuscripts preserved in such excellent condition for centuries.",
+                options: ["are", "were", "have been", "will be"],
+                correctIndex: 2,
+                translation: "Dịch nghĩa toàn câu: Hiếm khi những bản bản thảo quý giá như vậy lại được bảo tồn trong điều kiện tuyệt vời đến thế suốt nhiều thế kỷ.",
+                optionsBreakdown: [
+                    "A. are: Hiện tại đơn.",
+                    "B. were: Quá khứ đơn.",
+                    "C. have been: Hiện tại hoàn thành (have + been + Vp2).",
+                    "D. will be: Tương lai đơn."
+                ],
+                whyCorrect: "Dấu hiệu 'for centuries' (trong nhiều thế kỷ) kết hợp đảo ngữ 'Rarely + have/has + S + been + Vp2'. Do chủ ngữ số nhiều 'manuscripts' nên chọn 'have been'.",
+                whyOthersWrong: "A, B, D không đúng thì Hiện tại hoàn thành."
+            },
+            {
+                id: 21,
+                instruction: "PASSIVE VOICE (Động từ khuyết thiếu bị động)",
+                text: "Question 21: Children should _______ against dangerous infectious diseases at an early age to ensure long-term health.",
+                options: ["vaccinate", "be vaccinated", "being vaccinated", "be vaccinating"],
+                correctIndex: 1,
+                translation: "Dịch nghĩa toàn câu: Trẻ em nên được tiêm chủng phòng các bệnh truyền nhiễm nguy hiểm từ khi còn nhỏ để đảm bảo sức khỏe lâu dài.",
+                optionsBreakdown: [
+                    "A. vaccinate: Động từ nguyên mẫu chủ động.",
+                    "B. be vaccinated: Bị động động từ khuyết thiếu (should be + Vp2).",
+                    "C. being vaccinated: Dạng V-ing.",
+                    "D. be vaccinating: Tiếp diễn chủ động."
+                ],
+                whyCorrect: "Cấu trúc bị động với động từ khuyết thiếu: 'should + be + Vp2'. Trẻ em là đối tượng 'được tiêm chủng' nên chọn 'be vaccinated'.",
+                whyOthersWrong: "A, C, D sai công thức bị động của should."
+            },
+            {
+                id: 22,
+                instruction: "PASSIVE VOICE (Bị động cấu trúc Require)",
+                text: "Question 22: The students _______ to wear uniforms during the official school ceremonies.",
+                options: ["are required", "must be required", "have required", "will require"],
+                correctIndex: 0,
+                translation: "Dịch nghĩa toàn câu: Học sinh được yêu cầu mặc đồng phục trong các buổi lễ chính thức của trường.",
+                optionsBreakdown: [
+                    "A. are required: Hiện tại đơn bị động (be required to V).",
+                    "B. must be required: Lặp từ khuyết thiếu dư thừa.",
+                    "C. have required: Chủ động hiện tại hoàn thành.",
+                    "D. will require: Chủ động tương lai đơn."
+                ],
+                whyCorrect: "Cấu trúc bị động thông dụng chỉ quy định: 'S + be required + to V' (Được yêu cầu làm gì). Do đó chọn 'are required'.",
+                whyOthersWrong: "B, C, D không chuẩn xác về mặt cấu trúc và ý nghĩa bị động."
+            },
+            {
+                id: 23,
+                instruction: "PASSIVE VOICE (Bị động với động từ chỉ ý kiến / quan điểm)",
+                text: "Question 23: Many species are thought _______ at higher altitudes due to the increasingly rapid effects of global warming.",
+                options: ["to be migrated", "to have migrated", "to migrating", "to have been migrated"],
+                correctIndex: 1,
+                translation: "Dịch nghĩa toàn câu: Nhiều loài sinh vật được cho là đã di cư lên độ cao lớn hơn do ảnh hưởng ngày càng nhanh của sự nóng lên toàn cầu.",
+                optionsBreakdown: [
+                    "A. to be migrated: Dạng bị động không đúng với nội động từ.",
+                    "B. to have migrated: Dạng chủ động hoàn thành 'to have + Vp2'.",
+                    "C. to migrating: Sai cấu trúc.",
+                    "D. to have been migrated: Bị động không phù hợp."
+                ],
+                whyCorrect: "Động từ 'migrate' (di cư) là nội động từ mang nghĩa chủ động. Do việc di cư diễn ra trước thời điểm đánh giá 'are thought' nên dùng dạng hoàn thành 'to have migrated'.",
+                whyOthersWrong: "A và D bị sai vì 'migrate' không chia bị động; C sai ngữ pháp."
+            },
+            {
+                id: 24,
+                instruction: "PASSIVE VOICE (Cấu trúc Need + V-ing/To be Vp2)",
+                text: "Question 24: The flowers in the garden _______ twice a day during the heatwave to prevent them from wilting.",
+                options: ["need to water", "need to watering", "need watered", "need watering"],
+                correctIndex: 3,
+                translation: "Dịch nghĩa toàn câu: Những bông hoa trong vườn cần được tưới nước hai lần một ngày trong đợt nắng nóng để tránh bị héo.",
+                optionsBreakdown: [
+                    "A. need to water: Dạng chủ động.",
+                    "B. need to watering: Cấu trúc sai.",
+                    "C. need watered: Cấu trúc tiếng Anh thân mật không trang trọng.",
+                    "D. need watering: Dạng bị động 'need + V-ing' (= need to be Vp2)."
+                ],
+                whyCorrect: "Cấu trúc bị động với 'need': 'S (vật) + need + V-ing' hoặc 'need + to be + Vp2'. Do đó chọn 'need watering'.",
+                whyOthersWrong: "A là chủ động; B và C sai ngữ pháp chuẩn."
+            },
+            {
+                id: 25,
+                instruction: "PASSIVE VOICE (Thì quá khứ đơn bị động)",
+                text: "Question 25: It is reported that several houses _______ by the severe flood that hit the coastal region last weekend.",
+                options: ["destroyed", "were destroyed", "had destroyed", "have destroyed"],
+                correctIndex: 1,
+                translation: "Dịch nghĩa toàn câu: Có báo cáo rằng nhiều ngôi nhà đã bị phá hủy bởi trận lũ lụt dữ dội tràn qua vùng duyên hải vào cuối tuần trước.",
+                optionsBreakdown: [
+                    "A. destroyed: Chủ động quá khứ đơn.",
+                    "B. were destroyed: Bị động quá khứ đơn (were + Vp2).",
+                    "C. had destroyed: Chủ động quá khứ hoàn thành.",
+                    "D. have destroyed: Chủ động hiện tại hoàn thành."
+                ],
+                whyCorrect: "Trạng ngữ 'last weekend' yêu cầu chia quá khứ đơn. Ngôi nhà 'vật bị phá hủy' nên chọn bị động 'were destroyed'.",
+                whyOthersWrong: "A, C, D đều ở dạng chủ động."
+            },
+            {
+                id: 26,
+                instruction: "PASSIVE VOICE (Bị động truyền thuật hoàn thành)",
+                text: "Question 26: This masterpiece is believed _______ by Leonardo da Vinci during the early 16th century in Italy.",
+                options: ["to be painted", "to have been painted", "to have painted", "being painted"],
+                correctIndex: 1,
+                translation: "Dịch nghĩa toàn câu: Kiệt tác này được tin là đã được vẽ bởi Leonardo da Vinci vào đầu thế kỷ 16 tại Ý.",
+                optionsBreakdown: [
+                    "A. to be painted: Bị động hiện tại.",
+                    "B. to have been painted: Bị động hoàn thành (to have been + Vp2).",
+                    "C. to have painted: Chủ động hoàn thành.",
+                    "D. being painted: Dạng V-ing."
+                ],
+                whyCorrect: "Hành động vẽ tác phẩm diễn ra trong quá khứ ('16th century') trước thời điểm 'is believed' ở hiện tại, kết hợp bị động 'bức tranh được vẽ bởi Leonardo da Vinci' -> 'to have been painted'.",
+                whyOthersWrong: "A sai thì; C chủ động; D sai cấu trúc."
+            },
+            {
+                id: 27,
+                instruction: "PASSIVE VOICE (Cụm danh từ + To be Vp2)",
+                text: "Question 27: There's a lot of work _______ before we can officially launch the new product on the market.",
+                options: ["to be done", "to do", "being done", "done"],
+                correctIndex: 0,
+                translation: "Dịch nghĩa toàn câu: Có rất nhiều công việc cần phải được hoàn thành trước khi chúng ta có thể chính thức ra mắt sản phẩm mới trên thị trường.",
+                optionsBreakdown: [
+                    "A. to be done: Bị động 'to be + Vp2'.",
+                    "B. to do: Chủ động 'to-V'.",
+                    "C. being done: Bị động tiếp diễn.",
+                    "D. done: Phân từ hai đứng cô đơn."
+                ],
+                whyCorrect: "Cấu trúc bổ nghĩa cho danh từ chỉ công việc cần làm: 'work to be done' (công việc cần được thực hiện).",
+                whyOthersWrong: "B, C, D không phản ánh chính xác tính chất bị động chỉ mục đích công việc cần làm."
+            },
+            {
+                id: 28,
+                instruction: "PASSIVE VOICE (Rút gọn mệnh đề phủ định bị động)",
+                text: "Question 28: Not having _______ of the change in plans, she arrived at the office two hours earlier than everyone else.",
+                options: ["informed", "being informed", "been informed", "to be informed"],
+                correctIndex: 2,
+                translation: "Dịch nghĩa toàn câu: Do không được thông báo về sự thay đổi trong kế hoạch, cô ấy đã đến văn phòng sớm hơn mọi người hai tiếng.",
+                optionsBreakdown: [
+                    "A. informed: Dạng chủ động.",
+                    "B. being informed: Dạng V-ing.",
+                    "C. been informed: Dạng bị động hoàn thành 'Not having been + Vp2'.",
+                    "D. to be informed: Dạng to-V."
+                ],
+                whyCorrect: "Cấu trúc rút gọn mệnh đề nguyên nhân bị động dạng hoàn thành: 'Not having + been + Vp2' (vì không được thông báo).",
+                whyOthersWrong: "A chủ động; B, D sai cấu trúc sau Not having."
+            },
+            {
+                id: 29,
+                instruction: "PASSIVE VOICE (Tương lai đơn bị động)",
+                text: "Question 29: The new curriculum _______ nationwide at the beginning of next semester.",
+                options: ["will implement", "will be implemented", "is implementing", "has implemented"],
+                correctIndex: 1,
+                translation: "Dịch nghĩa toàn câu: Chương trình giảng dạy mới sẽ được áp dụng trên toàn quốc vào đầu học kỳ tới.",
+                optionsBreakdown: [
+                    "A. will implement: Tương lai đơn chủ động.",
+                    "B. will be implemented: Tương lai đơn bị động (will be + Vp2).",
+                    "C. is implementing: Hiện tại tiếp diễn chủ động.",
+                    "D. has implemented: Hiện tại hoàn thành chủ động."
+                ],
+                whyCorrect: "Thời gian 'at the beginning of next semester' chỉ tương lai; chương trình giảng dạy (curriculum) là vật 'được áp dụng' -> 'will be implemented'.",
+                whyOthersWrong: "A, C, D đều ở dạng chủ động."
+            },
+            {
+                id: 30,
+                instruction: "PASSIVE VOICE (Hiện tại tiếp diễn bị động)",
+                text: "Question 30: The documents _______ carefully at the moment by the legal team.",
+                options: ["are reviewing", "are being reviewed", "have reviewed", "review"],
+                correctIndex: 1,
+                translation: "Dịch nghĩa toàn câu: Các tài liệu hiện đang được xem xét cẩn thận bởi đội ngũ pháp lý.",
+                optionsBreakdown: [
+                    "A. are reviewing: Hiện tại tiếp diễn chủ động.",
+                    "B. are being reviewed: Hiện tại tiếp diễn bị động (are being + Vp2).",
+                    "C. have reviewed: Hiện tại hoàn thành chủ động.",
+                    "D. review: Hiện tại đơn chủ động."
+                ],
+                whyCorrect: "Dấu hiệu 'at the moment' yêu cầu chia Hiện tại tiếp diễn. Chủ ngữ 'The documents' là vật nên dùng bị động 'are being reviewed'.",
+                whyOthersWrong: "A, C, D đều là dạng chủ động."
+            },
+            {
+                id: 31,
+                instruction: "PASSIVE VOICE (Quá khứ tiếp diễn bị động)",
+                text: "Question 31: The suspect _______ by the police when new evidence emerged.",
+                options: ["was being questioned", "questioned", "has been questioned", "is questioned"],
+                correctIndex: 0,
+                translation: "Dịch nghĩa toàn câu: Nghi phạm đang bị cảnh sát thẩm vấn thì bằng chứng mới xuất hiện.",
+                optionsBreakdown: [
+                    "A. was being questioned: Quá khứ tiếp diễn bị động (was being + Vp2).",
+                    "B. questioned: Quá khứ đơn chủ động.",
+                    "C. has been questioned: Hiện tại hoàn thành bị động.",
+                    "D. is questioned: Hiện tại đơn bị động."
+                ],
+                whyCorrect: "Hành động đang diễn ra trong quá khứ 'nghi phạm đang bị hỏi đáp' thì hành động khác chen vào 'emerged' -> dùng Quá khứ tiếp diễn bị động 'was being questioned'.",
+                whyOthersWrong: "B chủ động; C và D sai phối thì quá khứ."
+            },
+            {
+                id: 32,
+                instruction: "PASSIVE VOICE (Quá khứ hoàn thành bị động)",
+                text: "Question 32: The contract _______ before the board changed its decision.",
+                options: ["has been signed", "was signed", "had been signed", "signs"],
+                correctIndex: 2,
+                translation: "Dịch nghĩa toàn câu: Hợp đồng đã được ký kết trước khi ban quản trị thay đổi quyết định.",
+                optionsBreakdown: [
+                    "A. has been signed: Hiện tại hoàn thành bị động.",
+                    "B. was signed: Quá khứ đơn bị động.",
+                    "C. had been signed: Quá khứ hoàn thành bị động (had been + Vp2).",
+                    "D. signs: Hiện tại đơn."
+                ],
+                whyCorrect: "Hợp đồng được ký xảy ra trước hành động 'before the board changed...' (quá khứ đơn) -> dùng Quá khứ hoàn thành bị động 'had been signed'.",
+                whyOthersWrong: "A, B, D không đáp ứng quy tắc hành động xảy ra trước một hành động quá khứ khác."
+            },
+            {
+                id: 33,
+                instruction: "PASSIVE VOICE (Tương lai đơn bị động)",
+                text: "Question 33: The proposal _______ by the committee tomorrow afternoon.",
+                options: ["is approved", "will approve", "will be approved", "has approved"],
+                correctIndex: 2,
+                translation: "Dịch nghĩa toàn câu: Đề xuất sẽ được ủy ban phê duyệt vào chiều mai.",
+                optionsBreakdown: [
+                    "A. is approved: Hiện tại đơn bị động.",
+                    "B. will approve: Tương lai đơn chủ động.",
+                    "C. will be approved: Tương lai đơn bị động (will be + Vp2).",
+                    "D. has approved: Hiện tại hoàn thành chủ động."
+                ],
+                whyCorrect: "Trạng từ 'tomorrow afternoon' thuộc thì Tương lai đơn. Chủ ngữ 'The proposal' (bản đề xuất) bị tác động nên chọn 'will be approved'.",
+                whyOthersWrong: "A sai thì; B và D ở thể chủ động."
+            },
+            {
+                id: 34,
+                instruction: "PASSIVE VOICE (Động từ khuyết thiếu bị động)",
+                text: "Question 34: The issue _______ immediately to prevent further complications.",
+                options: ["must address", "must have addressed", "must being addressed", "must be addressed"],
+                correctIndex: 3,
+                translation: "Dịch nghĩa toàn câu: Vấn đề cần phải được giải quyết ngay lập tức để tránh biến chứng phức tạp thêm.",
+                optionsBreakdown: [
+                    "A. must address: Chủ động nguyên mẫu.",
+                    "B. must have addressed: Chủ động hoàn thành.",
+                    "C. must being addressed: Ngữ pháp sai.",
+                    "D. must be addressed: Bị động động từ khuyết thiếu (must be + Vp2)."
+                ],
+                whyCorrect: "Cấu trúc bị động của động từ khuyết thiếu: 'must + be + Vp2'. Do đó chọn 'must be addressed'.",
+                whyOthersWrong: "A, B chủ động; C sai ngữ pháp."
+            },
+            {
+                id: 35,
+                instruction: "PASSIVE VOICE (Câu hỏi bị động)",
+                text: "Question 35: Why was the request for a budget increase _______ by the finance department without any further explanation?",
+                options: ["rejected", "rejecting", "reject", "being reject"],
+                correctIndex: 0,
+                translation: "Dịch nghĩa toàn câu: Tại sao yêu cầu tăng ngân sách lại bị bộ phận tài chính từ chối mà không có bất kỳ lời giải thích thêm nào?",
+                optionsBreakdown: [
+                    "A. rejected: Quá khứ phân từ Vp2.",
+                    "B. rejecting: Dạng V-ing.",
+                    "C. reject: Động từ nguyên mẫu.",
+                    "D. being reject: Sai dạng từ."
+                ],
+                whyCorrect: "Cấu trúc câu hỏi bị động quá khứ đơn: 'Why + was/were + S + Vp2...?'. Do đó chọn 'rejected'.",
+                whyOthersWrong: "B, C, D sai công thức bị động của 'was'."
+            },
+            {
+                id: 36,
+                instruction: "PASSIVE VOICE (Bàng thái cách / Giả định thức bị động)",
+                text: "Question 36: It is essential that every single application _______ carefully before the final selection process begins next week.",
+                options: ["is reviewed", "be reviewed", "will be reviewed", "being reviewed"],
+                correctIndex: 1,
+                translation: "Dịch nghĩa toàn câu: Điều quan trọng là mỗi đơn đăng ký phải được xem xét cẩn thận trước khi quy trình lựa chọn cuối cùng bắt đầu vào tuần tới.",
+                optionsBreakdown: [
+                    "A. is reviewed: Thì hiện tại đơn thông thường.",
+                    "B. be reviewed: Dạng bị động bàng thái cách (should be + Vp2 / be + Vp2).",
+                    "C. will be reviewed: Tương lai đơn.",
+                    "D. being reviewed: V-ing."
+                ],
+                whyCorrect: "Cấu trúc giả định thức: 'It is essential that + S + (should) + be + Vp2'. Do đó động từ 'be' giữ nguyên mẫu 'be reviewed'.",
+                whyOthersWrong: "A, C, D vi phạm cấu trúc bàng thái cách sau 'It is essential that'."
+            },
+            {
+                id: 37,
+                instruction: "PASSIVE VOICE (Bị động đứng sau giới từ)",
+                text: "Question 37: He was very disappointed after _______ for the position of senior manager despite his extensive experience.",
+                options: ["not being selected", "not selecting", "having not selected", "not to be selected"],
+                correctIndex: 0,
+                translation: "Dịch nghĩa toàn câu: Anh ấy đã rất thất vọng sau khi không được lựa chọn vào vị trí quản lý cấp cao dù có kinh nghiệm sâu rộng.",
+                optionsBreakdown: [
+                    "A. not being selected: Dạng bị động phủ định V-ing 'not being + Vp2'.",
+                    "B. not selecting: Dạng chủ động.",
+                    "C. having not selected: Cấu trúc đặt 'not' sai vị trí.",
+                    "D. not to be selected: Sau giới từ 'after' không dùng to-V."
+                ],
+                whyCorrect: "Sau giới từ 'after' dùng V-ing. Mang nghĩa bị động phủ định 'không được chọn' -> 'not being selected'.",
+                whyOthersWrong: "B chủ động; C sai vị trí 'not'; D sai dạng to-V sau giới từ."
+            },
+            {
+                id: 38,
+                instruction: "PASSIVE VOICE (Đảo ngữ 'Not until')",
+                text: "Question 38: Not until the investigation is complete _______ any official statement regarding the cause of the accident.",
+                options: ["will be released", "will any official statement be released", "any official statement will be released", "is any official statement released"],
+                correctIndex: 1,
+                translation: "Dịch nghĩa toàn câu: Mãi cho đến khi cuộc điều tra hoàn tất thì bất kỳ tuyên bố chính thức nào về nguyên nhân vụ tai nạn mới được đưa ra.",
+                optionsBreakdown: [
+                    "A. will be released: Thiếu chủ ngữ đảo giữa.",
+                    "B. will any official statement be released: Đảo ngữ bị động 'will + S + be + Vp2'.",
+                    "C. any official statement will be released: Chưa đảo ngữ.",
+                    "D. is any official statement released: Thì hiện tại không phù hợp sự việc diễn ra sau."
+                ],
+                whyCorrect: "Cấu trúc đảo ngữ: 'Not until + mệnh đề hiện tại, WILL + S + BE + Vp2'. Do đó chọn 'will any official statement be released'.",
+                whyOthersWrong: "A thiếu S; C chưa đảo ngữ; D sai thì."
+            },
+            {
+                id: 39,
+                instruction: "PASSIVE VOICE (Thì quá khứ đơn bị động)",
+                text: "Question 39: The thief _______ by the police while he was trying to escape through the narrow ventilation shaft.",
+                options: ["caught", "was caught", "was being caught", "has been caught"],
+                correctIndex: 1,
+                translation: "Dịch nghĩa toàn câu: Tên trộm đã bị cảnh sát bắt giữ trong khi hắn đang cố gắng tẩu thoát qua ống thông gió hẹp.",
+                optionsBreakdown: [
+                    "A. caught: Chủ động quá khứ đơn.",
+                    "B. was caught: Bị động quá khứ đơn (was + Vp2).",
+                    "C. was being caught: Nhấn mạnh quá trình không hợp lý với động từ catch.",
+                    "D. has been caught: Hiện tại hoàn thành bị động."
+                ],
+                whyCorrect: "Hành động 'bắt tên trộm' xảy ra chấm dứt chen ngang hành động 'đang cố tẩu thoát' (while he was trying...) -> chia Quá khứ đơn bị động 'was caught'.",
+                whyOthersWrong: "A chủ động; C không dùng tiếp diễn cho hành động khoảnh khắc 'catch'; D sai thì."
+            },
+            {
+                id: 40,
+                instruction: "PASSIVE VOICE (Cấu trúc bị động truyền thuật)",
+                text: "Question 40: He is said _______ one of the most promising researchers.",
+                options: ["being", "to be", "to have been", "be"],
+                correctIndex: 1,
+                translation: "Dịch nghĩa toàn câu: Anh ấy được nói là một trong những nhà nghiên cứu đầy triển vọng nhất.",
+                optionsBreakdown: [
+                    "A. being: Dạng V-ing.",
+                    "B. to be: Dạng to-V hiện tại.",
+                    "C. to have been: Dạng to-V hoàn thành quá khứ.",
+                    "D. be: Động từ nguyên mẫu."
+                ],
+                whyCorrect: "Cấu trúc bị động khách quan: 'S + be said + to V-bare'. Chỉ một sự thật ở hiện tại nên dùng 'to be'.",
+                whyOthersWrong: "A, D sai công thức; C chỉ hành động trong quá khứ không khớp ngữ cảnh hiện tại."
+            },
+            {
+                id: 41,
+                instruction: "PASSIVE VOICE (Bị động truyền thuật quá khứ)",
+                text: "Question 41: The CEO is believed _______ the merger last year.",
+                options: ["approve", "to approve", "to have approved", "approving"],
+                correctIndex: 2,
+                translation: "Dịch nghĩa toàn câu: Vị CEO được tin là đã phê duyệt vụ sáp nhập vào năm ngoái.",
+                optionsBreakdown: [
+                    "A. approve: Động từ nguyên mẫu.",
+                    "B. to approve: To-V hiện tại.",
+                    "C. to have approved: To-V hoàn thành chủ động 'to have + Vp2'.",
+                    "D. approving: V-ing."
+                ],
+                whyCorrect: "Hành động phê duyệt diễn ra vào 'last year' (quá khứ) trước thời điểm 'is believed' (hiện tại). Vị CEO tự thực hiện việc phê duyệt (mang nghĩa chủ động) -> chọn 'to have approved'.",
+                whyOthersWrong: "A, D sai cấu trúc; B không biểu thị thời điểm quá khứ."
+            },
+            {
+                id: 42,
+                instruction: "PASSIVE VOICE (Cấu trúc truyền khiến)",
+                text: "Question 42: She had her laptop _______ before the presentation.",
+                options: ["repair", "repairing", "repaired", "to repair"],
+                correctIndex: 2,
+                translation: "Dịch nghĩa toàn câu: Cô ấy đã mang chiếc máy tính xách tay của mình đi sửa trước buổi thuyết trình.",
+                optionsBreakdown: [
+                    "A. repair: Động từ nguyên mẫu.",
+                    "B. repairing: V-ing.",
+                    "C. repaired: Quá khứ phân từ Vp2.",
+                    "D. to repair: To-V."
+                ],
+                whyCorrect: "Cấu trúc truyền khiến bị động: 'have + sth + Vp2' (nhờ/thuê người sửa cái gì). Do đó chọn 'repaired'.",
+                whyOthersWrong: "A, B, D không đúng công thức bị động truyền khiến với Have."
+            },
+            {
+                id: 43,
+                instruction: "PASSIVE VOICE (Bị động của Make)",
+                text: "Question 43: The students were made _______ the assignment again.",
+                options: ["redo", "to redo", "redoing", "redone"],
+                correctIndex: 1,
+                translation: "Dịch nghĩa toàn câu: Các học sinh bị bắt buộc phải làm lại bài tập một lần nữa.",
+                optionsBreakdown: [
+                    "A. redo: Nguyên mẫu không to.",
+                    "B. to redo: Dạng to-V.",
+                    "C. redoing: V-ing.",
+                    "D. redone: Vp2."
+                ],
+                whyCorrect: "Chủ động: 'make sb V-bare' -> Bị động: 'be made + TO V'. Do đó chọn 'to redo'.",
+                whyOthersWrong: "A chỉ dùng trong câu chủ động; C, D sai công thức."
+            },
+            {
+                id: 44,
+                instruction: "PASSIVE VOICE (Thì quá khứ đơn bị động)",
+                text: "Question 44: The instructions _______ clearly enough, which led to many students being confused during the final exam.",
+                options: ["weren't explained", "didn't explain", "haven't been explained", "hadn't explained"],
+                correctIndex: 0,
+                translation: "Dịch nghĩa toàn câu: Lời hướng dẫn đã không được giải thích đủ rõ ràng, điều này dẫn đến việc nhiều sinh viên bị bối rối trong kỳ thi cuối kỳ.",
+                optionsBreakdown: [
+                    "A. weren't explained: Bị động phủ định quá khứ đơn (weren't + Vp2).",
+                    "B. didn't explain: Chủ động phủ định.",
+                    "C. haven't been explained: Bị động hiện tại hoàn thành.",
+                    "D. hadn't explained: Chủ động quá khứ hoàn thành."
+                ],
+                whyCorrect: "Mệnh đề sau 'led to...' chia quá khứ đơn, lời hướng dẫn 'vật không tự giải thích' -> chọn bị động quá khứ đơn 'weren't explained'.",
+                whyOthersWrong: "B, D chủ động; C sai phối thì hiện tại."
+            },
+            {
+                id: 45,
+                instruction: "PASSIVE VOICE (Câu bị động khách quan)",
+                text: "Question 45: It _______ that the company will declare bankruptcy if it cannot secure additional funding from the investors.",
+                options: ["is feared", "fears", "has feared", "is fearing"],
+                correctIndex: 0,
+                translation: "Dịch nghĩa toàn câu: Người ta e ngại rằng công ty sẽ tuyên bố phá sản nếu không thể đảm bảo thêm nguồn vốn từ các nhà đầu tư.",
+                optionsBreakdown: [
+                    "A. is feared: Bị động hiện tại đơn (is + Vp2).",
+                    "B. fears: Chủ động ngôi thứ 3 số ít.",
+                    "C. has feared: Chủ động hiện tại hoàn thành.",
+                    "D. is fearing: Chủ động hiện tại tiếp diễn."
+                ],
+                whyCorrect: "Cấu trúc bị động giả định / bị động khách quan: 'It + is/was + Vp2 + that...'. Do đó chọn 'is feared'.",
+                whyOthersWrong: "B, C, D đều ở thể chủ động."
+            },
+            {
+                id: 46,
+                instruction: "PASSIVE VOICE (Cấu trúc bị động với Let)",
+                text: "Question 46: Let proper documentation _______ maintained throughout the entire process.",
+                options: ["are", "be", "being", "been"],
+                correctIndex: 1,
+                translation: "Dịch nghĩa toàn câu: Hãy để tài liệu thích hợp được duy trì trong suốt toàn bộ quá trình.",
+                optionsBreakdown: [
+                    "A. are: Động từ tobe chia số nhiều.",
+                    "B. be: Động từ tobe nguyên mẫu.",
+                    "C. being: V-ing.",
+                    "D. been: Vp2."
+                ],
+                whyCorrect: "Cấu trúc bị động mệnh lệnh với Let: 'Let + N + BE + Vp2'. Do đó dùng nguyên mẫu 'be'.",
+                whyOthersWrong: "A, C, D không đúng công thức bị động đứng sau Let."
+            },
+            {
+                id: 47,
+                instruction: "PASSIVE VOICE (Bị động khách quan)",
+                text: "Question 47: It is widely _______ that the new environmental regulations will significantly reduce industrial carbon emissions by 2030.",
+                options: ["believed", "believing", "been believed", "believe"],
+                correctIndex: 0,
+                translation: "Dịch nghĩa toàn câu: Người ta tin tưởng rộng rãi rằng các quy định môi trường mới sẽ giảm đáng kể lượng khí thải carbon công nghiệp vào năm 2030.",
+                optionsBreakdown: [
+                    "A. believed: Quá khứ phân từ Vp2.",
+                    "B. believing: V-ing.",
+                    "C. been believed: Dư thừa 'been'.",
+                    "D. believe: Động từ nguyên mẫu."
+                ],
+                whyCorrect: "Cấu trúc bị động khách quan: 'It is + (trạng từ) + Vp2 + that...'. Do đó chọn 'believed'.",
+                whyOthersWrong: "B, D sai dạng từ; C dư thừa từ 'been'."
+            },
+            {
+                id: 48,
+                instruction: "PASSIVE VOICE (Thì hiện tại đơn bị động)",
+                text: "Question 48: Candidates _______ to bring their identification cards and original certificates to the interview room.",
+                options: ["remind", "are reminded", "are reminding", "have reminded"],
+                correctIndex: 1,
+                translation: "Dịch nghĩa toàn câu: Các ứng viên được nhắc nhở mang theo thẻ căn cước và chứng chỉ gốc vào phòng phỏng vấn.",
+                optionsBreakdown: [
+                    "A. remind: Chủ động nguyên mẫu.",
+                    "B. are reminded: Bị động hiện tại đơn (are + Vp2).",
+                    "C. are reminding: Chủ động tiếp diễn.",
+                    "D. have reminded: Chủ động hoàn thành."
+                ],
+                whyCorrect: "Thí sinh 'được người khác nhắc nhở' (bị động) mang tính thông báo quy định -> dùng 'are reminded'.",
+                whyOthersWrong: "A, C, D đều ở dạng chủ động."
+            },
+            {
+                id: 49,
+                instruction: "PASSIVE VOICE (Rút gọn bị động dạng hoàn thành)",
+                text: "Question 49: Having _______ about the potential risks of the surgery, the patient decided to postpone it for a few weeks.",
+                options: ["warned", "to be warned", "being warned", "been warned"],
+                correctIndex: 3,
+                translation: "Dịch nghĩa toàn câu: Sau khi được cảnh báo về những rủi ro tiềm ẩn của cuộc phẫu thuật, bệnh nhân đã quyết định hoãn lại vài tuần.",
+                optionsBreakdown: [
+                    "A. warned: Dạng chủ động.",
+                    "B. to be warned: Dạng to-V.",
+                    "C. being warned: Dạng tiếp diễn không khớp hoàn thành.",
+                    "D. been warned: Dạng bị động hoàn thành 'Having been + Vp2'."
+                ],
+                whyCorrect: "Bệnh nhân 'được cảnh báo trước khi hoãn' -> rút gọn bị động hoàn thành: 'Having + been + Vp2' (Having been warned).",
+                whyOthersWrong: "A chủ động; B, C sai ngữ pháp sau Having."
+            },
+            {
+                id: 50,
+                instruction: "PASSIVE VOICE (Cấu trúc bị động với Let)",
+                text: "Question 50: Let no confidential information _______ disclosed without authorization.",
+                options: ["be", "being", "been", "disclose"],
+                correctIndex: 0,
+                translation: "Dịch nghĩa toàn câu: Đừng để bất kỳ thông tin bảo mật nào bị tiết lộ mà không có sự cho phép.",
+                optionsBreakdown: [
+                    "A. be: Động từ tobe nguyên mẫu.",
+                    "B. being: V-ing.",
+                    "C. been: Vp2.",
+                    "D. disclose: Động từ."
+                ],
+                whyCorrect: "Cấu trúc bị động với Let: 'Let + N + BE + Vp2'. Do đó điền nguyên mẫu 'be'.",
+                whyOthersWrong: "B, C, D vi phạm công thức bị động mệnh lệnh của Let."
+            }
+        ];
+
+        // Web Audio Synth
+        const AudioContext = window.AudioContext || window.webkitAudioContext;
+        let audioCtx;
+
+        function initAudio() {
+            if (!audioCtx) {
+                audioCtx = new AudioContext();
+            }
+        }
+
+        function playDingSound() {
+            initAudio();
+            if (audioCtx.state === 'suspended') {
+                audioCtx.resume();
+            }
+            const now = audioCtx.currentTime;
+            const osc1 = audioCtx.createOscillator();
+            const osc2 = audioCtx.createOscillator();
+            const gain = audioCtx.createGain();
+
+            osc1.type = 'sine';
+            osc2.type = 'triangle';
+
+            osc1.frequency.setValueAtTime(523.25, now);
+            osc1.frequency.exponentialRampToValueAtTime(1046.50, now + 0.15);
+
+            osc2.frequency.setValueAtTime(659.25, now);
+            osc2.frequency.exponentialRampToValueAtTime(1318.51, now + 0.15);
+
+            gain.gain.setValueAtTime(0.3, now);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + 0.4);
+
+            osc1.connect(gain);
+            osc2.connect(gain);
+            gain.connect(audioCtx.destination);
+
+            osc1.start(now);
+            osc2.start(now);
+            osc1.stop(now + 0.4);
+            osc2.stop(now + 0.4);
+        }
+
+        function playWrongSound() {
+            initAudio();
+            if (audioCtx.state === 'suspended') {
+                audioCtx.resume();
+            }
+            const now = audioCtx.currentTime;
+            const osc = audioCtx.createOscillator();
+            const gain = audioCtx.createGain();
+
+            osc.type = 'sawtooth';
+            osc.frequency.setValueAtTime(180, now);
+            osc.frequency.linearRampToValueAtTime(110, now + 0.3);
+
+            gain.gain.setValueAtTime(0.3, now);
+            gain.gain.exponentialRampToValueAtTime(0.01, now + 0.35);
+
+            osc.connect(gain);
+            gain.connect(audioCtx.destination);
+
+            osc.start(now);
+            osc.stop(now + 0.35);
+        }
+
+        function launchConfetti() {
+            const canvas = document.getElementById('confetti-canvas');
+            if (!canvas) return;
+            const ctx = canvas.getContext('2d');
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+
+            const pieces = [];
+            const numberOfPieces = 100;
+            const colors = ['#f44336', '#e91e63', '#9c27b0', '#673ab7', '#00D26A', '#2196f3', '#03a9f4', '#ffeb3b', '#ff9800'];
+
+            for (let i = 0; i < numberOfPieces; i++) {
+                pieces.push({
+                    x: Math.random() * canvas.width,
+                    y: Math.random() * canvas.height - canvas.height,
+                    rotation: Math.random() * 360,
+                    size: Math.random() * 10 + 6,
+                    color: colors[Math.floor(Math.random() * colors.length)],
+                    speed: Math.random() * 3 + 2,
+                    oscSpeed: Math.random() * 0.05 + 0.02,
+                    oscStep: Math.random() * Math.PI
+                });
+            }
+
+            let frames = 0;
+            function update() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                pieces.forEach(p => {
+                    p.y += p.speed;
+                    p.oscStep += p.oscSpeed;
+                    p.x += Math.sin(p.oscStep) * 2;
+                    p.rotation += 2;
+
+                    ctx.save();
+                    ctx.translate(p.x, p.y);
+                    ctx.rotate((p.rotation * Math.PI) / 180);
+                    ctx.fillStyle = p.color;
+                    ctx.fillRect(-p.size / 2, -p.size / 2, p.size, p.size);
+                    ctx.restore();
+                });
+
+                frames++;
+                if (frames < 120) {
+                    requestAnimationFrame(update);
+                } else {
+                    ctx.clearRect(0, 0, canvas.width, canvas.height);
+                }
+            }
+            update();
+        }
+
+        function shuffleArray(array) {
+            const arr = [...array];
+            for (let i = arr.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [arr[i], arr[j]] = [arr[j], arr[i]];
+            }
+            return arr;
+        }
+
+        const userAnswers = {};
+
+        function renderQuiz() {
+            const container = document.getElementById('quiz-container');
+            container.innerHTML = '';
+
+            rawQuizData.forEach((q) => {
+                const optionsObj = q.options.map((opt, origIdx) => ({
+                    text: opt,
+                    originalIndex: origIdx
+                }));
+                const shuffledOptions = shuffleArray(optionsObj);
+
+                const card = document.createElement('div');
+                card.className = 'question-card';
+                card.id = `q-card-${q.id}`;
+
+                let optionsHTML = '';
+                shuffledOptions.forEach((optObj, btnIdx) => {
+                    const letter = String.fromCharCode(65 + btnIdx);
+                    optionsHTML += `
+                        <button class="option-btn" 
+                                id="btn-${q.id}-${optObj.originalIndex}" 
+                                onclick="handleSelect(${q.id}, ${optObj.originalIndex}, ${q.correctIndex})">
+                            <strong style="margin-right:8px; min-width:24px;">${letter}.</strong> ${optObj.text}
+                        </button>
+                    `;
+                });
+
+                let breakdownHTML = q.optionsBreakdown.map(item => `<div class="option-breakdown-item">• ${item}</div>`).join('');
+
+                card.innerHTML = `
+                    <div class="question-header">
+                        <span class="question-number">Câu ${q.id}</span>
+                        <span class="question-instruction">${q.instruction}</span>
+                    </div>
+                    <div class="question-text">${q.text}</div>
+                    <div class="options-grid">
+                        ${optionsHTML}
+                    </div>
+                    
+                    <div class="explanation-box" id="exp-${q.id}">
+                        <div class="explanation-title">💡 GIẢI THÍCH CHI TIẾT TỪ MS LÊ HẰNG ENGLISH</div>
+                        
+                        <div class="exp-section">
+                            <div class="exp-section-title">1. Dịch nghĩa toàn câu:</div>
+                            <p style="color:#2D3748; font-weight:700;">${q.translation}</p>
+                        </div>
+
+                        <div class="exp-section">
+                            <div class="exp-section-title">2. Phân tích ngữ pháp / từ vựng cả 4 đáp án:</div>
+                            <div class="options-breakdown-list">${breakdownHTML}</div>
+                        </div>
+
+                        <div class="exp-section">
+                            <div class="exp-section-title">3. Tại sao đáp án đúng lại đúng?</div>
+                            <p style="color:#276749; font-weight:800;">${q.whyCorrect}</p>
+                        </div>
+
+                        <div class="exp-section">
+                            <div class="exp-section-title">4. Tại sao các đáp án còn lại sai?</div>
+                            <p style="color:#C53030; font-weight:800;">${q.whyOthersWrong}</p>
+                        </div>
+                    </div>
+                `;
+
+                container.appendChild(card);
+            });
+        }
+
+        function handleSelect(questionId, selectedIdx, correctIdx) {
+            if (userAnswers[questionId] !== undefined) return;
+
+            userAnswers[questionId] = selectedIdx;
+
+            const card = document.getElementById(`q-card-${questionId}`);
+            const selectedBtn = document.getElementById(`btn-${questionId}-${selectedIdx}`);
+            const correctBtn = document.getElementById(`btn-${questionId}-${correctIdx}`);
+            const expBox = document.getElementById(`exp-${questionId}`);
+
+            const allBtns = card.querySelectorAll('.option-btn');
+            allBtns.forEach(btn => btn.disabled = true);
+
+            if (selectedIdx === correctIdx) {
+                selectedBtn.classList.add('correct');
+                playDingSound();
+                launchConfetti();
+            } else {
+                selectedBtn.classList.add('wrong');
+                correctBtn.classList.add('correct');
+                card.classList.add('shake');
+                playWrongSound();
+            }
+
+            expBox.style.display = 'block';
+        }
+
+        function submitQuiz() {
+            let score = 0;
+            const total = rawQuizData.length;
+
+            rawQuizData.forEach(q => {
+                if (userAnswers[q.id] === q.correctIndex) {
+                    score++;
+                }
+            });
+
+            const percentage = (score / total) * 100;
+            let feedback = "";
+
+            if (percentage < 50) {
+                feedback = "“Điểm lần này chưa cao lắm, con cố gắng đọc kỹ giải thích đáp án và làm lại nha. Cô tin con sẽ làm tốt hơn ở lần sau!”";
+            } else if (percentage >= 60 && percentage <= 80) {
+                feedback = "“Con đã có tiến bộ khá ổn rồi, con cố gắng đọc kỹ giải thích đáp án và làm lại nha. Cô tin con sẽ làm tốt hơn ở lần sau!”";
+            } else {
+                feedback = "“Làm tốt lắm, con cố gắng rinh điểm 10 ở lần sau nha!”";
+            }
+
+            document.getElementById('scoreDisplay').innerText = `${score} / ${total}`;
+            document.getElementById('feedbackDisplay').innerText = feedback;
+            document.getElementById('scoreModal').style.display = 'flex';
+
+            if (percentage >= 80) {
+                launchConfetti();
+            }
+        }
+
+        function closeModal() {
+            document.getElementById('scoreModal').style.display = 'none';
+        }
+
+        window.onload = () => {
+            renderQuiz();
+        };
+    </script>
+</body>
+</html>
